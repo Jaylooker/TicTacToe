@@ -14,38 +14,83 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TableRow>
-            <TextView
-                android:layout_height="match_parent"
-                android:layout_width="wrap_content"/>
-            <TextView
-                android:layout_height="match_parent"
-                android:layout_width="wrap_content"/>
-            <TextView
-                android:layout_height="match_parent"
-                android:layout_width="wrap_content"/>
+        <!-- First row -->
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_top_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
+
+            <Button
+                android:id="@+id/btn_top_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
+
+            <Button
+                android:id="@+id/btn_top_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
         </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_height="match_parent"
-                android:layout_width="wrap_content"/>
-            <TextView
-                android:layout_height="match_parent"
-                android:layout_width="wrap_content"/>
-            <TextView
-                android:layout_height="match_parent"
-                android:layout_width="wrap_content"/>
+        <!-- Second row -->
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_middle_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
+
+            <Button
+                android:id="@+id/btn_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
+
+            <Button
+                android:id="@+id/btn_middle_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
         </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_height="match_parent"
-                android:layout_width="wrap_content"/>
-            <TextView
-                android:layout_height="match_parent"
-                android:layout_width="wrap_content"/>
-            <TextView
-                android:layout_height="match_parent"
-                android:layout_width="wrap_content"/>
+        <!-- Third row -->
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_bottom_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
+
+            <Button
+                android:id="@+id/btn_bottom_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
+
+            <Button
+                android:id="@+id/btn_bottom_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
         </TableRow>
 
     </TableLayout>
