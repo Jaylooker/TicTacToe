@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="X">"X"</string>
-    <string name="O">"O"</string>
-    <string name="EMPTY">" "</string>
-</resources>
