@@ -21,9 +21,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:background="@android:color/black"
         android:columnCount="3"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
         android:rowCount="3">
         <!-- First row -->
         <Button
@@ -33,6 +32,15 @@
             android:layout_height="wrap_content"
             android:layout_row="0"
             android:layout_column="0"
+            android:layout_margin="7dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            app:fontFamily="@font/maagkramp_font_family"
+            android:fontFamily="@font/maagkramp_font_family"
             android:onClick="OnBoardButtonClick" />
 
         <Button
@@ -42,7 +50,15 @@
             android:layout_height="wrap_content"
             android:layout_row="0"
             android:layout_column="1"
-            android:onClick="OnBoardButtonClick" />
+            android:layout_margin="7dp"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            app:fontFamily="@font/maagkramp_font_family"
+            android:fontFamily="@font/maagkramp_font_family"
+            android:onClick="OnBoardButtonClick"
+            />
 
         <Button
             android:id="@+id/btn_top_right"
@@ -51,6 +67,15 @@
             android:layout_height="wrap_content"
             android:layout_row="0"
             android:layout_column="2"
+            android:layout_margin="7dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            app:fontFamily="@font/maagkramp_font_family"
+            android:fontFamily="@font/maagkramp_font_family"
             android:onClick="OnBoardButtonClick" />
         <!-- Second row -->
         <Button
@@ -60,6 +85,14 @@
             android:layout_height="wrap_content"
             android:layout_row="1"
             android:layout_column="0"
+            android:layout_margin="7dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            app:fontFamily="@font/maagkramp_font_family"
+            android:fontFamily="@font/maagkramp_font_family"
             android:onClick="OnBoardButtonClick" />
 
         <Button
@@ -69,6 +102,12 @@
             android:layout_height="wrap_content"
             android:layout_row="1"
             android:layout_column="1"
+            android:layout_margin="7dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            app:fontFamily="@font/maagkramp_font_family"
+            android:fontFamily="@font/maagkramp_font_family"
             android:onClick="OnBoardButtonClick" />
 
         <Button
@@ -78,6 +117,14 @@
             android:layout_height="wrap_content"
             android:layout_row="1"
             android:layout_column="2"
+            android:layout_margin="7dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            app:fontFamily="@font/maagkramp_font_family"
+            android:fontFamily="@font/maagkramp_font_family"
             android:onClick="OnBoardButtonClick" />
         <!-- Third row -->
         <Button
@@ -87,6 +134,15 @@
             android:layout_height="wrap_content"
             android:layout_row="2"
             android:layout_column="0"
+            android:layout_margin="7dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            app:fontFamily="@font/maagkramp_font_family"
+            android:fontFamily="@font/maagkramp_font_family"
             android:onClick="OnBoardButtonClick" />
 
         <Button
@@ -96,6 +152,13 @@
             android:layout_height="wrap_content"
             android:layout_row="2"
             android:layout_column="1"
+            android:layout_margin="7dp"
+            android:layout_marginBottom="0dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            app:fontFamily="@font/maagkramp_font_family"
+            android:fontFamily="@font/maagkramp_font_family"
             android:onClick="OnBoardButtonClick" />
 
         <Button
@@ -105,6 +168,15 @@
             android:layout_height="wrap_content"
             android:layout_row="2"
             android:layout_column="2"
+            android:layout_margin="7dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            app:fontFamily="@font/maagkramp_font_family"
+            android:fontFamily="@font/maagkramp_font_family"
             android:onClick="OnBoardButtonClick" />
 
     </GridLayout>
