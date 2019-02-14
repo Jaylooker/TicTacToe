@@ -15,8 +15,14 @@ public class Board {
     //constructor
     public Board() {
         this.board = new int[3][3];
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[i].length; j++) {
+                board[i][j] = BoardValue.EMPTY.getBoard_value();
+            }
+        }
     }
 
+    //methods
     public boolean is_full() {
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
@@ -26,10 +32,5 @@ public class Board {
             }
         }
         return true;
-    }
-
-    //methods
-    public void set_move(Move move) {
-        this.board[move.row][move.col] = move.board_value.getBoard_value();
     }
 }

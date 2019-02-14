@@ -1,5 +1,7 @@
 package com.jaylookerstudios.tictactoe;
 
+import java.util.ArrayList;
+
 //stores information for human and computer player
 public class Player {
     private int id;
@@ -41,12 +43,22 @@ public class Player {
 
     //plays a move to board
     public void play_move(Board board, Move move) {
-        board.set_move(move);
+        board.getBoard()[move.row][move.col] = move.board_value.getBoard_value();
     }
 
     //use min-max algorithm to determine best move
     public Move get_best_move(Board board) {
         //todo finish min max algorithm
+        Board temp_board = board;
+        //go through possible moves
+        ArrayList<Move> availible_moves = get_possible_moves(temp_board);
+        for(Move move: availible_moves) {
+            //play a move
+
+            //score it
+
+            //repeat recrusively
+        }
         Move move = new Move(0,0, this.board_value);
         return move;
     }
@@ -83,5 +95,19 @@ public class Player {
             if (diagonal_up == winning_length) { return true; }
         }
         return false;
+    }
+
+    //returns possible moves
+    public ArrayList<Move> get_possible_moves(Board board) {
+        ArrayList<Move> moves = new ArrayList<>();
+        for (int i = 0; i < board.getBoard().length; i++) {
+            for (int j = 0; j < board.getBoard()[i].length; j++) {
+                if (board.getBoard()[i][i] == BoardValue.EMPTY.getBoard_value()) {
+                    Move playable = new Move(i, j, BoardValue.EMPTY);
+                    moves.add(playable);
+                }
+            }
+        }
+        return moves;
     }
 }

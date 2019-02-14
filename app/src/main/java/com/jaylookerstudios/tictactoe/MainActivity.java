@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
             Move move = new Move(row, col, user.getBoard_value());
-            board.set_move(move);
+            user.play_move(board, move);
 
             //set user's display value to the button
             button.setText(user.getBoard_value().getDisplay_value());
