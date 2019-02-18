@@ -15,24 +15,40 @@ public class MainActivity extends AppCompatActivity {
     Player user = new Player(0, "You", BoardValue.X);
     Player computer = new Player(1, "Computer", BoardValue.O);
 
-    TextView txt_win_text = (TextView) findViewById(R.id.txt_win_text);
-    Button btn_restart = (Button) findViewById(R.id.btn_restart);
+    TextView txt_win_text;
+    Button btn_restart;
     //board
-    GridLayout board_layout = (GridLayout) findViewById(R.id.board_layout);
-    Button btn_top_left = (Button) findViewById(R.id.btn_top_left);
-    Button btn_top_middle = (Button) findViewById(R.id.btn_top_middle);
-    Button btn_top_right = (Button) findViewById(R.id.btn_top_right);
-    Button btn_middle_left = (Button) findViewById(R.id.btn_middle_left);
-    Button btn_center = (Button) findViewById(R.id.btn_center);
-    Button btn_middle_right = (Button) findViewById(R.id.btn_middle_right);
-    Button btn_bottom_left = (Button) findViewById(R.id.btn_bottom_left);
-    Button btn_bottom_middle = (Button) findViewById(R.id.btn_bottom_middle);
-    Button btn_bottom_right = (Button) findViewById(R.id.btn_bottom_right);
+    GridLayout board_layout;
+    Button btn_top_left;
+    Button btn_top_middle;
+    Button btn_top_right;
+    Button btn_middle_left;
+    Button btn_center;
+    Button btn_middle_right;
+    Button btn_bottom_left;
+    Button btn_bottom_middle;
+    Button btn_bottom_right;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //intialize views
+        txt_win_text = (TextView) findViewById(R.id.txt_win_text);
+        btn_restart = (Button) findViewById(R.id.btn_restart);
+        //board
+        board_layout = (GridLayout) findViewById(R.id.board_layout);
+        btn_top_left = (Button) findViewById(R.id.btn_top_left);
+        btn_top_middle = (Button) findViewById(R.id.btn_top_middle);
+        btn_top_right = (Button) findViewById(R.id.btn_top_right);
+        btn_middle_left = (Button) findViewById(R.id.btn_middle_left);
+        btn_center = (Button) findViewById(R.id.btn_center);
+        btn_middle_right = (Button) findViewById(R.id.btn_middle_right);
+        btn_bottom_left = (Button) findViewById(R.id.btn_bottom_left);
+        btn_bottom_middle = (Button) findViewById(R.id.btn_bottom_middle);
+        btn_bottom_right = (Button) findViewById(R.id.btn_bottom_right);
+
         //todo user and computer keep playing moves until the board is full
     }
 
